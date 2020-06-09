@@ -7,9 +7,7 @@ pipeline {
                 echo 'Building..'
                 script{
                     sleep 5s;
-                }
-                echo 'I slept for 5s'
-                script{
+                    echo 'I slept for 5s'
                     echo 'Date is:', date +'%Y-%m-%d'
                 }
             }
