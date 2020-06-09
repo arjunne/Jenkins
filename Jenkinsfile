@@ -11,9 +11,9 @@ pipeline {
                     DATE='Someday'
                     date +'%Y-%m-%d'
                     echo 'I slept for 5s'
+                    echo "${DATE}"
                     """
                 }
-                echo "${DATE}"
             }
         }
         stage('Test') {
