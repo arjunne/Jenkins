@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sscript{
+                script{
                     sleep 5s;
                 }
                 echo 'I slept for 5s'
