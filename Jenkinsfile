@@ -33,7 +33,7 @@ pipeline {
         }
     }
     post {
-    always {
+    aborted {
         echo 'I run always'
         }
     }
