@@ -9,10 +9,10 @@ pipeline {
                     sh """
                     sleep 5s
                     DATE=date +'%Y-%m-%d'
-                    sh "echo ${DATE}"
                     echo 'I slept for 5s'
                     """
                 }
+                echo "${DATE}"
             }
         }
         stage('Test') {
