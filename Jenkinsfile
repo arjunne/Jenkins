@@ -6,9 +6,11 @@ pipeline {
             steps {
                 echo 'Building..'
                 script{
+                    sh """
                     sleep 5s
                     echo 'I slept for 5s'
                     echo 'Date is:', date +'%Y-%m-%d'
+                    """
                 }
             }
         }
@@ -16,13 +18,17 @@ pipeline {
             steps {
                 echo 'Testing..'
                 script{
+                    sh """
                     sleep 5s
+                    """
                 }
             }
         }
         stage('Deploy') {
             steps {
+                sh """
                 echo 'Deploying....'
+                """
             }
         }
     }
