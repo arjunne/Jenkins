@@ -10,7 +10,7 @@ pipeline {
                 }
                 echo 'I slept for 5s'
                 script{
-                    echo 'I\'m printing date for fun', date +'%Y-%m-%d'
+                    echo 'Date is:', date +'%Y-%m-%d'
                 }
             }
         }
