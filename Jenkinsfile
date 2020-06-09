@@ -8,7 +8,8 @@ pipeline {
                 script{
                     sh """
                     sleep 5s
-                    date +'%Y-%m-%d'
+                    DATE=date +'%Y-%m-%d'
+                    echo '${DATE}'
                     echo 'I slept for 5s'
                     """
                 }
