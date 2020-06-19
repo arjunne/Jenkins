@@ -20,6 +20,7 @@ pipeline {
                 script{
                     sh """
                     sleep 5s
+                    nc -z google.com 80
                     """
                 }
             }
